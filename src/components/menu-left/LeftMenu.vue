@@ -71,7 +71,7 @@ const { isLeftMenuCollapse } = storeToRefs(UIStore)
 
 </script>
   
-<style>
+<style lang="less" scoped>
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
   min-height: 400px;
@@ -79,10 +79,15 @@ const { isLeftMenuCollapse } = storeToRefs(UIStore)
 
 .el-menu {
   height: 100%;
+ .el-menu-item {
+  .el-icon {
+    margin-left: 20px;
+  }
+ }
 }
 
 .top-title {
-  padding-top: 20px;
+  padding: 30px 0;
   text-align: center;
 }
 </style>
