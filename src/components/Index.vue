@@ -13,7 +13,7 @@
             <div class="right">
               <img class="avatar" src="https://q1.qlogo.cn/g?b=qq&nk=3146315882&s=640" alt="">
               <span class="username">Username</span>
-              <span class="logout">[退出登陆]</span>
+              <span class="logout" style="cursor: pointer">[退出登陆]</span>
             </div>
           </div>
         </el-header>

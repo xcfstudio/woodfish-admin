@@ -1,9 +1,9 @@
 <template>
 
-  <el-menu default-active="dashboard" class="el-menu-vertical-demo" :collapse="isLeftMenuCollapse" :router="true">
-    <div class="top-title"><span v-if="!isLeftMenuCollapse">系统后台</span></div>
+  <el-menu default-active="/" class="el-menu-vertical-demo" :collapse="isLeftMenuCollapse" :router="true">
+    <div class="top-title" v-show="!isLeftMenuCollapse"><img  src="@/assets/logo.svg" alt=""><span >系统后台</span></div>
 
-    <el-menu-item index="dashboard">
+    <el-menu-item index="/">
       <el-icon>
         <Odometer />
       </el-icon>
@@ -56,7 +56,6 @@ Coin,
   Coordinate,
   Lightning,
   Magnet,
-  Menu as IconMenu,
   Odometer,
   Postcard,
   Service,
@@ -72,6 +71,9 @@ const { isLeftMenuCollapse } = storeToRefs(UIStore)
 </script>
   
 <style lang="less" scoped>
+.ml20 {
+  margin-left: 20px;
+}
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
   min-height: 400px;
@@ -79,16 +81,20 @@ const { isLeftMenuCollapse } = storeToRefs(UIStore)
 
 .el-menu {
   height: 100%;
- .el-menu-item {
-  .el-icon {
-    margin-left: 20px;
-  }
- }
+
 }
 
 .top-title {
   padding: 30px 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 40px;
+    margin-right: 10px;
+  }
 }
 </style>
   

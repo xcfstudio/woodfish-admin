@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     Index: typeof import('./src/components/Index.vue')['default']
     LeftMenu: typeof import('./src/components/menu-left/LeftMenu.vue')['default']
+    Linechart: typeof import('./src/components/charts/Linechart.vue')['default']
     Menu: typeof import('./src/components/menu-left/menu.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
